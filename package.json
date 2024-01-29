@@ -1,0 +1,59 @@
+{
+  "name": "lib-components-vue",
+  "private": false,
+  "version": "0.0.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1",
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "autoprefixer": "^10.4.17",
+    "path": "^0.12.7",
+    "postcss": "^8.4.33",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.2",
+    "vue-tsc": "^1.8.25"
+  },
+  "files": [
+    "dist",
+    "src/components/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoRocha/lib-components-vue.git"
+  },
+  "keywords": [
+    "checkbox",
+    "material",
+    "material-ui",
+    "lib-components-vue",
+    "vue3",
+    "vue",
+    "vuejs"
+  ],
+  "main": "./dist/lib-components-vue.umd.cjs",
+  "module": "./dist/lib-components-vue.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/lib-components-vue.js",
+      "require": "./dist/lib-components-vue.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.3.3",
+    "vue": "^3.0.0"
+  }
+}
